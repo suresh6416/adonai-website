@@ -95,10 +95,63 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\controller\aboutUsController.js" />
+    <Content Include="app\views\aboutUs\aboutUs.html" />
+    <Content Include="app\views\landing\about.html" />
+    <Content Include="app\views\landing\footer.html" />
+    <Content Include="app\views\layout\header.html" />
+    <Content Include="app\views\landing\home.html" />
+    <Content Include="app\views\landing\Partners.html" />
+    <Content Include="app\views\landing\portfolio.html" />
+    <Content Include="app\views\landing\promo.html" />
+    <Content Include="app\views\landing\services.html" />
+    <Content Include="app\views\landing\team.html" />
+    <Content Include="app\views\layout\welcome.html" />
+    <Content Include="assets\angularjs\angular-cookies.min.js" />
+    <Content Include="assets\angularjs\angular-sanitize.min.js" />
+    <Content Include="assets\angularjs\angular-touch.min.js" />
+    <Content Include="assets\angularjs\angular.min.js" />
+    <Content Include="assets\angularjs\plugins\angular-file-upload\angular-file-upload.min.js" />
+    <Content Include="assets\angularjs\plugins\angular-ui-router.min.js" />
+    <Content Include="assets\angularjs\plugins\ocLazyLoad.min.js" />
+    <Content Include="assets\angularjs\plugins\ui-bootstrap-tpls.min.js" />
+    <Content Include="assets\angularjs\plugins\ui-select\select.min.css" />
+    <Content Include="assets\angularjs\plugins\ui-select\select.min.js" />
+    <Content Include="content\bootstrap-theme.css" />
+    <Content Include="content\bootstrap-theme.min.css" />
+    <Content Include="content\bootstrap.css" />
+    <Content Include="content\bootstrap.min.css" />
+    <Content Include="content\custom.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="scripts\angular-mocks.js" />
+    <Content Include="scripts\angular-route.js" />
+    <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular.js" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\bootstrap.min.css.map" />
+    <Content Include="content\bootstrap.css.map" />
+    <Content Include="content\bootstrap-theme.min.css.map" />
+    <Content Include="content\bootstrap-theme.css.map" />
+    <Content Include="scripts\angular-route.min.js.map" />
+    <Content Include="assets\angularjs\angular-cookies.min.js.map" />
+    <Content Include="assets\angularjs\angular-sanitize.min.js.map" />
+    <Content Include="assets\angularjs\angular-touch.min.js.map" />
+    <Content Include="assets\angularjs\angular.min.js.map" />
+    <Content Include="assets\angularjs\plugins\angular-file-upload\upload.php" />
+    <None Include="scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-1.9.1.js" />
+    <Content Include="scripts\jquery-1.9.1.min.js" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="assets\global\plugins\slider-revolution-slider\rs-plugin\font\revicons.woff" />
     <Content Include="assets\global\plugins\font-awesome\fonts\fontawesome-webfont.eot" />
@@ -106,6 +159,31 @@
     <Content Include="assets\global\plugins\font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="assets\global\plugins\font-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="assets\global\plugins\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="scripts\angular.min.js.map" />
+    <Content Include="scripts\jquery-1.9.1.min.map" />
+    <Content Include="theme\angularjs\angular-cookies.min.js.map" />
+    <Content Include="theme\angularjs\angular-sanitize.min.js.map" />
+    <Content Include="theme\angularjs\angular-touch.min.js.map" />
+    <Content Include="theme\angularjs\angular.min.js.map" />
+    <Content Include="theme\angularjs\plugins\angular-file-upload\upload.php" />
+    <Content Include="theme\plugins\bootstrap-hover-dropdown\LICENSE" />
+    <Content Include="theme\plugins\bootstrap-hover-dropdown\README.md" />
+    <Content Include="theme\plugins\bootstrap-switch\LICENSE" />
+    <Content Include="theme\plugins\bootstrap-switch\README.md" />
+    <Content Include="theme\plugins\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="theme\plugins\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="theme\plugins\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="theme\plugins\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="theme\plugins\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="theme\plugins\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="theme\plugins\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="theme\plugins\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="theme\plugins\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="theme\plugins\jquery-slimscroll\README.md" />
+    <Content Include="theme\plugins\jquery-slimscroll\slimScroll.jquery.json" />
+    <Content Include="theme\plugins\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="theme\plugins\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="theme\plugins\simple-line-icons\fonts\Simple-Line-Icons.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -114,7 +192,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\frontend\onepage\css\custom.css" />
     <Content Include="assets\frontend\onepage\css\style-responsive.css" />
     <Content Include="assets\frontend\onepage\css\style.css" />
     <Content Include="assets\frontend\onepage\css\themes\red.css" />
@@ -179,6 +256,49 @@
     <Content Include="index.html" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="theme\angularjs\angular-cookies.min.js" />
+    <Content Include="theme\angularjs\angular-sanitize.min.js" />
+    <Content Include="theme\angularjs\angular-touch.min.js" />
+    <Content Include="theme\angularjs\angular.min.js" />
+    <Content Include="theme\angularjs\plugins\angular-file-upload\angular-file-upload.min.js" />
+    <Content Include="theme\angularjs\plugins\angular-ui-router.min.js" />
+    <Content Include="theme\angularjs\plugins\ocLazyLoad.min.js" />
+    <Content Include="theme\angularjs\plugins\ui-bootstrap-tpls.min.js" />
+    <Content Include="theme\angularjs\plugins\ui-select\select.min.css" />
+    <Content Include="theme\angularjs\plugins\ui-select\select.min.js" />
+    <Content Include="theme\app.min.js" />
+    <Content Include="theme\css\components.min.css" />
+    <Content Include="theme\css\plugins.min.css" />
+    <Content Include="theme\layout\css\custom.min.css" />
+    <Content Include="theme\layout\css\layout.min.css" />
+    <Content Include="theme\layout\css\themes\darkblue.min.css" />
+    <Content Include="theme\layout\scripts\demo.min.js" />
+    <Content Include="theme\layout\scripts\layout.min.js" />
+    <Content Include="theme\layout\scripts\quick-nav.min.js" />
+    <Content Include="theme\layout\scripts\quick-sidebar.min.js" />
+    <Content Include="theme\plugins\bootstrap-hover-dropdown\bootstrap-hover-dropdown.js" />
+    <Content Include="theme\plugins\bootstrap-hover-dropdown\bootstrap-hover-dropdown.min.js" />
+    <Content Include="theme\plugins\bootstrap-switch\css\bootstrap-switch.css" />
+    <Content Include="theme\plugins\bootstrap-switch\css\bootstrap-switch.min.css" />
+    <Content Include="theme\plugins\bootstrap-switch\js\bootstrap-switch.js" />
+    <Content Include="theme\plugins\bootstrap-switch\js\bootstrap-switch.min.js" />
+    <Content Include="theme\plugins\bootstrap\css\bootstrap.css" />
+    <Content Include="theme\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="theme\plugins\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="theme\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="theme\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="theme\plugins\font-awesome\css\font-awesome.css" />
+    <Content Include="theme\plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="theme\plugins\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="theme\plugins\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="theme\plugins\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="theme\plugins\simple-line-icons\fonts\Simple-Line-Icons.dev.svg" />
+    <Content Include="theme\plugins\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="theme\plugins\simple-line-icons\icons-lte-ie7.js" />
+    <Content Include="theme\plugins\simple-line-icons\License.txt" />
+    <Content Include="theme\plugins\simple-line-icons\Readme.txt" />
+    <Content Include="theme\plugins\simple-line-icons\simple-line-icons.css" />
+    <Content Include="theme\plugins\simple-line-icons\simple-line-icons.min.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +306,10 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\angularjs\plugins\angular-file-upload\uploads\" />
+    <Folder Include="theme\angularjs\plugins\angular-file-upload\uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

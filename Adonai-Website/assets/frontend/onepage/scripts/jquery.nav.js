@@ -198,12 +198,17 @@
 			}
 		},
 
-		scrollTo: function(target, callback) {
-			var offset = $(target).offset().top;
-			offset = offset - 58;//$('.header').outerHeight()
-			$('html, body').animate({
-				scrollTop: offset
-			}, this.config.scrollSpeed, this.config.easing, callback);
+		scrollTo: function (target, callback) {
+		    if ($(target).offset() !== undefined) {
+		        var offset = $(target).offset().top;
+		        offset = offset - 58;//$('.header').outerHeight()
+		        $('html, body').animate({
+		            scrollTop: offset
+		        }, this.config.scrollSpeed, this.config.easing, callback);
+		    }
+		    else {
+		        window.location.href = target;
+		    }
 		},
 
 		unbindInterval: function() {
