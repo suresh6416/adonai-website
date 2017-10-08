@@ -1,8 +1,20 @@
-﻿var AdonaiApp = angular.module('AdonaiApp', ['ui.router', 'oc.lazyLoad']);
+﻿var AdonaiApp = angular.module('AdonaiApp', ['ui.router', 'oc.lazyLoad', 'ui.bootstrap']);
 
 AdonaiApp.controller('HomeController', ['$rootScope', '$scope', function ($rootScope, $scope) {
     $scope.$on('$includeContentLoaded', function () {
-        Layout.init(); // init header        
+        $scope.myInterval = 3000;
+        $scope.slides = [
+          {
+              image: 'assets/frontend/onepage/img/silder/slide1.jpg'
+          },
+          {
+              image: 'assets/frontend/onepage/img/silder/Slide2_bg.jpg'
+          },
+          {
+              image: 'assets/frontend/onepage/img/silder/slide1.jpg'
+          }
+        ];
+        Layout.init(); // init header 
     });
 }]);
 
@@ -11,7 +23,7 @@ AdonaiApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvid
     // Redirect any unmatched url
     $urlRouterProvider.otherwise("/welcome/home");
 
-    $stateProvider        
+    $stateProvider
         .state('welcome', {
             abstract: true,
             url: '/welcome',
@@ -23,21 +35,34 @@ AdonaiApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvid
             data: { pageTitle: 'Home' },
             controller: "HomeController"
         })
-        .state('welcome.aboutUs', {
-            url: "/aboutUs",
-            templateUrl: "app/views/aboutUs/aboutUs.html",
-            data: { pageTitle: 'AboutUs' },
-            controller: "aboutUsController",
-            resolve: {
-                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
-                    return $ocLazyLoad.load({
-                        name: 'MetronicApp',
-                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
-                        files: [
-                            'app/controller/aboutUsController.js'
-                        ]
-                    });
-                }]
-            }
+        .state('welcome.aboutTraining', {
+            url: "/aboutTraining",
+            templateUrl: "app/views/aboutUs/aboutTraining.html",
+            data: { pageTitle: 'About Us' }
+        })
+        .state('welcome.aboutSoftwareDev', {
+            url: "/aboutSoftwareDev",
+            templateUrl: "app/views/aboutUs/aboutSoftwareDev.html",
+            data: { pageTitle: 'About Us' }
+        })
+        .state('welcome.aboutRecruitAndEmp', {
+            url: "/aboutRecruitAndEmp",
+            templateUrl: "app/views/aboutUs/aboutRecruitAndEmp.html",
+            data: { pageTitle: 'About Us' }
+        })
+        .state('welcome.trainingService', {
+            url: "/trainingService",
+            templateUrl: "app/views/services/trainingService.html",
+            data: { pageTitle: 'Training' }
+        })
+        .state('welcome.softwareDevService', {
+            url: "/softwareDevService",
+            templateUrl: "app/views/services/softwareDevService.html",
+            data: { pageTitle: 'Software Developement' }
+        })
+        .state('welcome.recruitService', {
+            url: "/recruitService",
+            templateUrl: "app/views/services/recruitService.html",
+            data: { pageTitle: 'Recruitment and Employment' }
         })
 }]);

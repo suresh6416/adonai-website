@@ -1,3 +1,64 @@
-﻿.page-content {
-    margin-top:70px;
+﻿.page-container-ext {
+    margin-top:60px;
+    background-color:#eef1f5;
 }
+.portlet-header-ext > h4{
+    background-color: #e6400c;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 1em 20px;
+    margin: 0;
+}
+.course-icon-size {
+    width:41px;
+    height:41px;
+}
+
+.mt-widget-1 .mt-height{
+    min-height:120px;
+}
+.pad-top-ext strong {  
+  padding-top: 8px !important;
+}
+.about-text .bg-color-blue {
+    background-color:#33b1e6;
+}
+.about-text .bg-color-red {
+    background-color:#e85425;
+}
+.about-text .bg-color-green {
+    background-color:#94db40;
+}
+.caption-subject-color-green {
+    color:#94db40 !important;
+}
+.caption-subject-color-red {
+    color:#e85425 !important;
+}
+.client-font {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+.pre-footer-height {
+    min-height:600px;
+}
+/*BEGIN: Carousal*/
+/*#slides_control > div{
+  height: 200px;
+}*/
+#slides_control > img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  width:100%;
+  /*width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;*/
+}
+/*END: Carousal*/

@@ -460,8 +460,9 @@ a:hover {
 /* Promo block */
 .promo-block {
   overflow-x: hidden;
+  position:relative;
 }
-.slider-item-1 .promo-like {
+/*.slider-item-1 .promo-like {
   color: #fff;
   background: rgba(0,0,0,0.67);
   display: inline-block;
@@ -623,7 +624,7 @@ a:hover {
 }
 .tparrows:hover {
   background: rgba(255, 255, 255, 0.32) !important;
-}
+}*/
 
 /* About- block */
 .about-block {

@@ -96,18 +96,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
-    <Content Include="app\controller\aboutUsController.js" />
-    <Content Include="app\views\aboutUs\aboutUs.html" />
+    <Content Include="app\views\aboutUs\aboutRecruitAndEmp.html" />
+    <Content Include="app\views\aboutUs\aboutSoftwareDev.html" />
+    <Content Include="app\views\aboutUs\aboutTraining.html" />
     <Content Include="app\views\landing\about.html" />
     <Content Include="app\views\landing\footer.html" />
     <Content Include="app\views\layout\header.html" />
     <Content Include="app\views\landing\home.html" />
-    <Content Include="app\views\landing\Partners.html" />
-    <Content Include="app\views\landing\portfolio.html" />
+    <Content Include="app\views\landing\partners.html" />
+    <Content Include="app\views\landing\projects.html" />
     <Content Include="app\views\landing\promo.html" />
     <Content Include="app\views\landing\services.html" />
     <Content Include="app\views\landing\team.html" />
     <Content Include="app\views\layout\welcome.html" />
+    <Content Include="app\views\services\recruitService.html" />
+    <Content Include="app\views\services\softwareDevService.html" />
+    <Content Include="app\views\services\trainingService.html" />
     <Content Include="assets\angularjs\angular-cookies.min.js" />
     <Content Include="assets\angularjs\angular-sanitize.min.js" />
     <Content Include="assets\angularjs\angular-touch.min.js" />
@@ -118,6 +122,19 @@
     <Content Include="assets\angularjs\plugins\ui-bootstrap-tpls.min.js" />
     <Content Include="assets\angularjs\plugins\ui-select\select.min.css" />
     <Content Include="assets\angularjs\plugins\ui-select\select.min.js" />
+    <Content Include="assets\global\css\components.min.css" />
+    <Content Include="assets\pages\css\about.min.css" />
+    <Content Include="assets\pages\media\bg\1.jpg" />
+    <Content Include="assets\pages\media\bg\2.jpg" />
+    <Content Include="assets\pages\media\bg\3.jpg" />
+    <Content Include="assets\pages\media\bg\4.jpg" />
+    <Content Include="assets\pages\media\bg\5.jpg" />
+    <Content Include="assets\pages\media\bg\6.jpg" />
+    <Content Include="assets\pages\media\courses\blockchain.png" />
+    <Content Include="assets\pages\media\courses\data_scientist.png" />
+    <Content Include="assets\pages\media\courses\dotnet.gif" />
+    <Content Include="assets\pages\media\courses\full_stack.jpg" />
+    <Content Include="assets\pages\media\courses\java.png" />
     <Content Include="content\bootstrap-theme.css" />
     <Content Include="content\bootstrap-theme.min.css" />
     <Content Include="content\bootstrap.css" />
@@ -309,6 +326,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\angularjs\plugins\angular-file-upload\uploads\" />
+    <Folder Include="assets\pages\media\users\" />
+    <Folder Include="assets\pages\scripts\" />
     <Folder Include="theme\angularjs\plugins\angular-file-upload\uploads\" />
   </ItemGroup>
   <PropertyGroup>
