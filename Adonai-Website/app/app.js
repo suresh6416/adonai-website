@@ -14,7 +14,7 @@ AdonaiApp.controller('HomeController', ['$rootScope', '$scope', function ($rootS
               image: 'assets/frontend/onepage/img/silder/slide1.jpg'
           }
         ];
-        Layout.init(); // init header 
+        Layout.init(true); // init header 
     });
 }]);
 
@@ -38,31 +38,104 @@ AdonaiApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvid
         .state('welcome.aboutTraining', {
             url: "/aboutTraining",
             templateUrl: "app/views/aboutUs/aboutTraining.html",
-            data: { pageTitle: 'About Us' }
+            data: { pageTitle: 'AboutUs' },
+            controller: "aboutUsController",
+            reloadOnSearch: false,
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'MetronicApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'app/controller/aboutUsController.js'
+                        ]
+                    });
+                }]
+            }
         })
         .state('welcome.aboutSoftwareDev', {
             url: "/aboutSoftwareDev",
             templateUrl: "app/views/aboutUs/aboutSoftwareDev.html",
-            data: { pageTitle: 'About Us' }
+            data: { pageTitle: 'About Us' },
+            controller: "aboutUsController",
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'MetronicApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'app/controller/aboutUsController.js'
+                        ]
+                    });
+                }]
+            }
         })
         .state('welcome.aboutRecruitAndEmp', {
             url: "/aboutRecruitAndEmp",
             templateUrl: "app/views/aboutUs/aboutRecruitAndEmp.html",
-            data: { pageTitle: 'About Us' }
+            data: { pageTitle: 'About Us' },
+            controller: "aboutUsController",
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'MetronicApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'app/controller/aboutUsController.js'
+                        ]
+                    });
+                }]
+            }
         })
         .state('welcome.trainingService', {
             url: "/trainingService",
             templateUrl: "app/views/services/trainingService.html",
-            data: { pageTitle: 'Training' }
+            data: { pageTitle: 'Training' },
+            controller: "serviceController",
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'MetronicApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'app/controller/serviceController.js'
+                        ]
+                    });
+                }]
+            }
         })
         .state('welcome.softwareDevService', {
             url: "/softwareDevService",
             templateUrl: "app/views/services/softwareDevService.html",
-            data: { pageTitle: 'Software Developement' }
+            data: { pageTitle: 'Software Developement' },
+            controller: "serviceController",
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'MetronicApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'app/controller/serviceController.js'
+                        ]
+                    });
+                }]
+            }
         })
         .state('welcome.recruitService', {
             url: "/recruitService",
             templateUrl: "app/views/services/recruitService.html",
-            data: { pageTitle: 'Recruitment and Employment' }
+            data: { pageTitle: 'Recruitment and Employment' },
+            controller: "serviceController",
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'MetronicApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'app/controller/serviceController.js'
+                        ]
+                    });
+                }]
+            }
         })
 }]);

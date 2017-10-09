@@ -96,6 +96,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\controller\aboutUsController.js" />
+    <Content Include="app\controller\serviceController.js" />
     <Content Include="app\views\aboutUs\aboutRecruitAndEmp.html" />
     <Content Include="app\views\aboutUs\aboutSoftwareDev.html" />
     <Content Include="app\views\aboutUs\aboutTraining.html" />

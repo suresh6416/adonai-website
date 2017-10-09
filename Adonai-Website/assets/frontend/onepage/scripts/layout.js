@@ -37,6 +37,7 @@ var Layout = function () {
     }
 
     var handleHeaderPosition = function () {
+
         var CurrentHeaderPosition = 0;
         if ($(".header").length !== 0) {
             CurrentHeaderPosition = $(".header").offset().top;// current header's vertical position
@@ -65,24 +66,25 @@ var Layout = function () {
 
     var handleGo2Top = function () {
         var Go2TopOperation = function () {
-            var CurrentWindowPosition = $(window).scrollTop();// current vertical position
-            if (CurrentWindowPosition > 300) {
-                $(".go2top").show();
-            } else {
-                $(".go2top").hide();
-            }
-        };
+                var CurrentWindowPosition = $(window).scrollTop();// current vertical position
+                if (CurrentWindowPosition > 300) {
+                    $(".go2top").show();
+                } else {
+                    $(".go2top").hide();
+                }
+            };
 
-        Go2TopOperation();// call headerFix() when the page was loaded
-        if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-            $(window).bind("touchend touchcancel touchleave", function (e) {
-                Go2TopOperation();
-            });
-        } else {
-            $(window).scroll(function () {
-                Go2TopOperation();
-            });
-        }
+            Go2TopOperation();// call headerFix() when the page was loaded
+            if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+                $(window).bind("touchend touchcancel touchleave", function (e) {
+                    Go2TopOperation();
+                });
+            } else {
+                $(window).scroll(function () {
+                    Go2TopOperation();
+                });
+            }
+        
     }
 
     function handleBootstrap() {
@@ -217,22 +219,36 @@ var Layout = function () {
     }
 
     return {
-        init: function () {
-            //handlePromoBlock();
-            handleParallax();
-            handleScrolling();
-            handleNavItemCurrent();
-            handleHeaderPosition();
-            handleBootstrap();
-            handleCounter();
-            handleGo2Top();
-            handlePortfolioSorting();
-            handleFancybox();
-            handleMobiToggler();
-            handleTwitter();
-            valignCenterMessage();
-            valignCenterPortfolio();
-            handleTheme();
+        init: function (isLandingPageRequired) {
+            if (isLandingPageRequired) {
+                //handlePromoBlock();
+                handleParallax();
+                handleScrolling();
+                handleNavItemCurrent();
+                handleHeaderPosition();
+                handleBootstrap();
+                handleCounter();
+                handleGo2Top();
+                handlePortfolioSorting();
+                handleFancybox();
+                handleMobiToggler();
+                handleTwitter();
+                valignCenterMessage();
+                valignCenterPortfolio();
+                handleTheme();
+            }
+            else {
+                $(window).scrollTop(0);
+
+                //var activeMenu = '#about';
+                //$(".header-navigation li").each(function () {
+                //    $(this).removeClass("current");
+                //    var menu = $(this).find('a').attr('href');
+                //    if (menu === activeMenu) {
+                //        $(this).addClass("current");
+                //    }
+                //});
+            }               
         },
     };
 }();
